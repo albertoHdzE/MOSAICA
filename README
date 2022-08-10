@@ -1,0 +1,26 @@
+MOSAICA 0.1.
+MOSAICS from MATHEMATICA.
+A Mathematica 10.02 package for using a set of
+Computational biology tools:
+	- MOSAICS
+	- X3dna
+	- curves+
+	- pymol
+MOSAICA 0.1 was implemented under linux, UBUNTU distro
+14.04. intel CORE i7 vPro
+
+For testing MOSAICA, save 12_MOSAICA folder in
+your /home/[your_path].
+
+Please, read documentation in order to up MOSAICA environment.
+
+Examples how to run MOSAICA in Mathematica 10.02 are in 12_MOSAICA/callingMOSAICA.nb
+
+For any comment, feel free to drop us a line:
+	albertohernandezespinosa@gmail.com
+	hector.zenil [at] algorithmicnaturelab [dot] org [http://www.hectorzenil.net/]
+
+
+
+
+

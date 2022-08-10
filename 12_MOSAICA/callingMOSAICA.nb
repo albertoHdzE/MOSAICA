@@ -1,0 +1,570 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     22824,        561]
+NotebookOptionsPosition[     21676,        517]
+NotebookOutlinePosition[     22012,        532]
+CellTagsIndexPosition[     21969,        529]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Remove", "[", 
+    RowBox[{
+    "SetMOSAICADirectory", ",", " ", "SetSimulationParametersFile", ",", " ", 
+     "ReplaceSimulationParameter", ",", " ", "myFile"}], "]"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"$Context", ",", " ", "$ContextPath"}], "}"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Names", "[", "\"\<MOSAICA`\>\"", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Names", "[", "\"\<Global`\>\"", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"ClearAll", "[", "\"\<MOSAICA`\>\"", "]"}], "\[IndentingNewLine]", 
+   
+   RowBox[{"ClearAll", "[", "\"\<Global`\>\"", "]"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SetDirectory", "[", "\"\</home/alberto/12_MOSAICA\>\"", "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{"Get", "[", "\"\<MOSAICA`\>\"", "]"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetMOSAICADirectory", "[", "\"\</home/alberto/12_MOSAICA\>\"", "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetSimulationPath", "[", 
+     "\"\</home/alberto/12_MOSAICA/version.3.8-EM/examples/lysozyme\>\"", 
+     "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetSimulationParametersFile", "[", "\"\<refine.input.test\>\"", "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{"#ReplaceSimulationParameter", "[", 
+    RowBox[{"\"\<num_procs\>\"", ",", " ", "\"\<ghyt\>\""}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.646825949790599*^9, 3.646825996620984*^9}, 
+   3.646826389242804*^9, {3.6468269228833103`*^9, 3.646826928322003*^9}, {
+   3.6468282044012613`*^9, 3.646828219268074*^9}, {3.646828262803677*^9, 
+   3.646828264562325*^9}, {3.6468283487213163`*^9, 3.6468283986693773`*^9}, {
+   3.646828682930691*^9, 3.646828725666683*^9}, {3.646828892856966*^9, 
+   3.646828893126356*^9}, {3.64682892319083*^9, 3.6468289552002687`*^9}, {
+   3.646829118349724*^9, 3.646829176946211*^9}, {3.646829244664495*^9, 
+   3.646829256014834*^9}, {3.646830018981216*^9, 3.646830046873968*^9}, {
+   3.646830332850595*^9, 3.64683034666008*^9}, {3.646853462828292*^9, 
+   3.646853483015374*^9}, {3.646853548123744*^9, 3.6468535519532223`*^9}, {
+   3.646853669933036*^9, 3.646853715969795*^9}, {3.6468540377480392`*^9, 
+   3.646854045866914*^9}, {3.6468541023759127`*^9, 3.646854107022293*^9}, 
+   3.646854383082367*^9, {3.646854741732354*^9, 3.646854763296229*^9}, {
+   3.646854823185305*^9, 3.646854834372203*^9}, {3.646854866958239*^9, 
+   3.6468548783069687`*^9}, {3.646854985705182*^9, 3.6468549945922117`*^9}, {
+   3.646855103977421*^9, 3.646855159625655*^9}, {3.646855222123186*^9, 
+   3.646855271066594*^9}, {3.6468576394910707`*^9, 3.6468576422581787`*^9}, 
+   3.646909463387576*^9, {3.6470213284116898`*^9, 3.6470214670450068`*^9}, 
+   3.647021510056487*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Global`\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"MOSAICA`\"\>", ",", "\<\"TemplatingLoader`\"\>", 
+     ",", "\<\"PacletManager`\"\>", ",", "\<\"System`\"\>", 
+     ",", "\<\"Global`\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.64685600346765*^9, 3.64685606829669*^9, 3.646856106052409*^9, 
+   3.6468561789706593`*^9, 3.6468562301367617`*^9, 3.6468575448752832`*^9, {
+   3.646857645767201*^9, 3.646857671195046*^9}, 3.646857726934058*^9, 
+   3.646857757764656*^9, 3.646902928988508*^9, 3.6469030609520807`*^9, 
+   3.646903413916882*^9, 3.6469035432333508`*^9, 3.646903620947764*^9, 
+   3.646903927402258*^9, {3.646903968212493*^9, 3.646903991789291*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{
+  3.64685600346765*^9, 3.64685606829669*^9, 3.646856106052409*^9, 
+   3.6468561789706593`*^9, 3.6468562301367617`*^9, 3.6468575448752832`*^9, {
+   3.646857645767201*^9, 3.646857671195046*^9}, 3.646857726934058*^9, 
+   3.646857757764656*^9, 3.646902928988508*^9, 3.6469030609520807`*^9, 
+   3.646903413916882*^9, 3.6469035432333508`*^9, 3.646903620947764*^9, 
+   3.646903927402258*^9, {3.646903968212493*^9, 3.6469039917920313`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{
+  3.64685600346765*^9, 3.64685606829669*^9, 3.646856106052409*^9, 
+   3.6468561789706593`*^9, 3.6468562301367617`*^9, 3.6468575448752832`*^9, {
+   3.646857645767201*^9, 3.646857671195046*^9}, 3.646857726934058*^9, 
+   3.646857757764656*^9, 3.646902928988508*^9, 3.6469030609520807`*^9, 
+   3.646903413916882*^9, 3.6469035432333508`*^9, 3.646903620947764*^9, 
+   3.646903927402258*^9, {3.646903968212493*^9, 3.6469039917928543`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\"\<Global`\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<MOSAICA`\>\"", ",", "\"\<TemplatingLoader`\>\"", ",", 
+     "\"\<PacletManager`\>\"", ",", "\"\<System`\>\"", ",", 
+     "\"\<Global`\>\""}], "}"}]}], "}"}]], "Input",
+ CellChangeTimes->{3.646855973123691*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Global`\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"MOSAICA`\"\>", ",", "\<\"TemplatingLoader`\"\>", 
+     ",", "\<\"PacletManager`\"\>", ",", "\<\"System`\"\>", 
+     ",", "\<\"Global`\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.646855423344726*^9, 3.6468554827685547`*^9, {3.64685551376055*^9, 
+   3.646855547286718*^9}, 3.646855608956551*^9, {3.646855690568431*^9, 
+   3.646855694268853*^9}, {3.6468557326889067`*^9, 3.646855753168911*^9}, 
+   3.6468558724807787`*^9, 3.64685597322279*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\"\<Global`\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<MOSAICA`\>\"", ",", "\"\<TemplatingLoader`\>\"", ",", 
+     "\"\<PacletManager`\>\"", ",", "\"\<System`\>\"", ",", 
+     "\"\<Global`\>\""}], "}"}]}], "}"}]], "Input",
+ CellChangeTimes->{3.646855380328505*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Global`\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"MOSAICA`\"\>", ",", "\<\"TemplatingLoader`\"\>", 
+     ",", "\<\"PacletManager`\"\>", ",", "\<\"System`\"\>", 
+     ",", "\<\"Global`\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.646854743100892*^9, 3.646854770634253*^9}, {
+   3.646854869166367*^9, 3.6468548795480824`*^9}, 3.6468549248385677`*^9, 
+   3.646854996300156*^9, {3.646855132367694*^9, 3.646855160522451*^9}, {
+   3.646855206870152*^9, 3.646855274187688*^9}, 3.646855344470244*^9, 
+   3.646855380436524*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"$Context", ",", " ", "$ContextPath"}], "}"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Names", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Names", "[", "\"\<Global`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ClearAll", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ClearAll", "[", "\"\<Global`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SetDirectory", "[", "\"\</home/alberto/12_MOSAICA\>\"", "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Get", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetMOSAICADirectory", "[", "\"\</home/alberto/12_MOSAICA\>\"", "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetSimulationPath", "[", 
+     "\"\</home/alberto/12_MOSAICA/version.3.8-EM/examples/lysozyme\>\"", 
+     "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetSimulationParametersFile", "[", "\"\<refine.input.test\>\"", "]"}], 
+    ";"}], "\[IndentingNewLine]", "ShowSimulationParamValues", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.646907720013871*^9, 3.64690777928715*^9}, {
+   3.646908094508348*^9, 3.646908104911396*^9}, {3.647021531147748*^9, 
+   3.647021571021701*^9}, {3.647021722866785*^9, 3.647021724469922*^9}, 
+   3.647021774304729*^9, {3.647021888923502*^9, 3.6470218949652042`*^9}, {
+   3.647021926899057*^9, 3.647021937932529*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {"\<\"simulation_typ{MIN}  PT EEMC SEQ_PT SEQ_EEMC NM DBFR\"\>", \
+"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"minimize_type{stsamc}\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\
+\"\"\>", "\<\"\"\>"},
+    {"\<\"prop_tors_sig{1.e-2} 1.e-5 proposal sig 0 < number < 2 Pi, usually \
+1.e-5\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"prop_rot_sig{1.e-4} 1.e-5 {0 <= radian < 2 Pi}\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"prop_trans_sig{1.e-3} 1.e-4 {Angstrom >= 0.0}\"\>", "\<\"\"\>", "\<\
+\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"prop_clos_sig{1.e-3} {Angstrom >= 0.0}\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"total_step_mc{7000} 2000000 :10   number > 1\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"statistics_freq{100} 200\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>"},
+    {"\<\"write_energy_unit{Ha} kcal  Ha: atomic unit, kcal: kcal/mol\"\>", "\
+\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"stsamc_type{trigonom}\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\
+\"\"\>", "\<\"\"\>"},
+    {"\<\"stsamc_period{4000}\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\
+\"\>", "\<\"\"\>"},
+    {"\<\"stsamc_ampl{2500}\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\
+\>", "\<\"\"\>"},
+    {"\<\"stsamc_shift{0}\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>"},
+    {"\<\"random_seed{-9378000501} {large integer}\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"cgres_model{KB_3pt}  KB_3pt, off \"\>", "\<\"\"\>", "\<\"\"\>", "\<\
+\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"mol_parm_file{top_3pt_prot_na.rtf}\"\>", "\<\"\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"inter_database_file{par_3pt_prot_na.prm} \"\>", "\<\"\"\>", "\<\"\"\
+\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"cryo_em_database_file{orientation.data}\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"pos_init_file{init.pdb}\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", "\
+\<\"\"\>", "\<\"\"\>"},
+    {"\<\"pos_out_file{sampled.pdb}\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>"},
+    {"\<\"atom_pos_file{sampled.pos}\"\>", "\<\"\"\>", "\<\"\"\>", \
+"\<\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"epot_file{sampled.pot_energy}\"\>", "\<\"\"\>", "\<\"\"\>", "\<\"\"\
+\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"einter_file{sampled.inter_energy}\"\>", "\<\"\"\>", "\<\"\"\>", "\<\
+\"\"\>", "\<\"\"\>", "\<\"\"\>"},
+    {"\<\"energy_term{bond_off}\"\>", "\<\"energy_term{bend_off}\"\>", \
+"\<\"energy_term{tors_off}\"\>", "\<\"energy_term{onfo_off}\"\>", \
+"\<\"energy_term{inter}\"\>", "\<\"energy_term{cryo_em}\"\>"},
+    {"\<\"energy_term{bond_off}\"\>", "\<\"energy_term{bend_off}\"\>", \
+"\<\"energy_term{tors_off}\"\>", "\<\"energy_term{onfo_off}\"\>", \
+"\<\"energy_term{inter}\"\>", "\<\"energy_term{cryo_em}\"\>"}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  TableForm[{{"simulation_typ{MIN}  PT EEMC SEQ_PT SEQ_EEMC NM DBFR"}, {
+    "minimize_type{stsamc}"}, {
+    "prop_tors_sig{1.e-2} 1.e-5 proposal sig 0 < number < 2 Pi, usually \
+1.e-5"}, {"prop_rot_sig{1.e-4} 1.e-5 {0 <= radian < 2 Pi}"}, {
+    "prop_trans_sig{1.e-3} 1.e-4 {Angstrom >= 0.0}"}, {
+    "prop_clos_sig{1.e-3} {Angstrom >= 0.0}"}, {
+    "total_step_mc{7000} 2000000 :10   number > 1"}, {
+    "statistics_freq{100} 200"}, {
+    "write_energy_unit{Ha} kcal  Ha: atomic unit, kcal: kcal/mol"}, {
+    "stsamc_type{trigonom}"}, {"stsamc_period{4000}"}, {
+    "stsamc_ampl{2500}"}, {"stsamc_shift{0}"}, {
+    "random_seed{-9378000501} {large integer}"}, {
+    "cgres_model{KB_3pt}  KB_3pt, off "}, {
+    "mol_parm_file{top_3pt_prot_na.rtf}"}, {
+    "inter_database_file{par_3pt_prot_na.prm} "}, {
+    "cryo_em_database_file{orientation.data}"}, {"pos_init_file{init.pdb}"}, {
+    "pos_out_file{sampled.pdb}"}, {"atom_pos_file{sampled.pos}"}, {
+    "epot_file{sampled.pot_energy}"}, {"einter_file{sampled.inter_energy}"}, {
+    "energy_term{bond_off}", "energy_term{bend_off}", "energy_term{tors_off}",
+      "energy_term{onfo_off}", "energy_term{inter}", 
+     "energy_term{cryo_em}"}, {
+    "energy_term{bond_off}", "energy_term{bend_off}", "energy_term{tors_off}",
+      "energy_term{onfo_off}", "energy_term{inter}", 
+     "energy_term{cryo_em}"}}]]], "Output",
+ CellChangeTimes->{{3.646907755977973*^9, 3.646907781510951*^9}, {
+   3.646907846709544*^9, 3.646907866209878*^9}, {3.6469080861886597`*^9, 
+   3.6469081059707727`*^9}, 3.64690817670861*^9, 3.64702153775531*^9, 
+   3.647021584463725*^9, 3.647021728361745*^9, 3.6470217752332897`*^9, 
+   3.647021820791881*^9, {3.647021874414123*^9, 3.6470218963146343`*^9}, 
+   3.647021939839477*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"$Context", ",", " ", "$ContextPath"}], "}"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Names", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Names", "[", "\"\<Global`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ClearAll", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ClearAll", "[", "\"\<Global`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetDirectory", "[", 
+     "\"\</home/alberto/12_MOSAICA/version.3.8-EM/examples/lysozyme\>\"", 
+     "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Get", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetMOSAICADirectory", "[", 
+     "\"\</home/alberto/12_MOSAICA/version.3.8-EM/examples/lysozyme\>\"", 
+     "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetSimulationPath", "[", 
+     "\"\</home/alberto/12_MOSAICA/version.3.8-EM/examples/lysozyme\>\"", 
+     "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetSimulationParametersFile", "[", "\"\<refine.input.test\>\"", "]"}], 
+    ";"}], "\n", "RunMOSAICSSimulation", "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.6469104912875547`*^9, 3.6469105476418123`*^9}, {
+  3.647021970143772*^9, 3.64702199057959*^9}, {3.6470220475775557`*^9, 
+  3.647022049334724*^9}, {3.647028725477487*^9, 3.6470287707405787`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"$Context", ",", " ", "$ContextPath"}], "}"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Names", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Names", "[", "\"\<Global`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ClearAll", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ClearAll", "[", "\"\<Global`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"SetDirectory", "[", "\"\</home/alberto/12_MOSAICA\>\"", "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Get", "[", "\"\<MOSAICA`\>\"", "]"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetMOSAICAMasterPath", "[", "\"\</home/alberto/12_MOSAICA\>\"", "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetMOSAICSTestsDirectory", "[", 
+     "\"\</home/alberto/12_MOSAICA/MOSAICAFilesTest\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetReorderingTestsDirectory", "[", 
+     "\"\</home/alberto/12_MOSAICA/REDEVELOPMENT\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", "RunPymolReordering"}]}]], "Input",
+ CellChangeTimes->{{3.64703037276849*^9, 3.647030373338954*^9}, {
+  3.647030644942752*^9, 3.647030870196478*^9}, {3.647031667324099*^9, 
+  3.647031684195221*^9}, {3.647031980919582*^9, 3.647031982219028*^9}, {
+  3.647032780585104*^9, 3.647032852700164*^9}, {3.647032935065578*^9, 
+  3.647032937802023*^9}}],
+
+Cell[BoxData["\<\"/home/alberto/12_MOSAICA\"\>"], "Output",
+ CellChangeTimes->{{3.6470327902331657`*^9, 3.647032809460703*^9}, {
+  3.647032844417921*^9, 3.647032854259387*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"$Context", ",", " ", "$ContextPath"}], "}"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Names", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Names", "[", "\"\<Global`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ClearAll", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ClearAll", "[", "\"\<Global`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"SetDirectory", "[", "\"\</home/alberto/12_MOSAICA\>\"", "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Get", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetMOSAICAMasterPath", "[", "\"\</home/alberto/12_MOSAICA\>\"", "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetReorderingTestsDirectory", "[", 
+     "\"\</home/alberto/12_MOSAICA/REDEVELOPMENT\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetX3DNADirectory", "[", "\"\</home/alberto/12_MOSAICA/x3dna-v2.2\>\"", 
+     "]"}], ";"}], "\[IndentingNewLine]", "RunX3DNAAnalisys"}]}]], "Input",
+ CellChangeTimes->{{3.6470675400977087`*^9, 3.647067566768474*^9}, {
+   3.64706764496577*^9, 3.6470676692678633`*^9}, 3.647067714956788*^9, {
+   3.647067750607396*^9, 3.647067753101222*^9}, {3.647084733114616*^9, 
+   3.647084772390922*^9}, {3.647089784501251*^9, 3.647089785837302*^9}}],
+
+Cell[BoxData["\<\"/home/alberto/12_MOSAICA\"\>"], "Output",
+ CellChangeTimes->{3.6470677315558968`*^9, 3.647067921033401*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"$Context", ",", " ", "$ContextPath"}], "}"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Names", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Names", "[", "\"\<Global`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ClearAll", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ClearAll", "[", "\"\<Global`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"SetDirectory", "[", "\"\</home/alberto/12_MOSAICA\>\"", "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Get", "[", "\"\<MOSAICA`\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetMOSAICAMasterPath", "[", "\"\</home/alberto/12_MOSAICA\>\"", "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SetCurvesPath", "[", "\"\</home/alberto/12_MOSAICA\>\"", "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+   "SetReorderingTestsDirectory", "[", 
+    "\"\</home/alberto/12_MOSAICA/REDEVELOPMENT\>\"", "]"}], "\n", 
+   RowBox[{
+    RowBox[{
+    "SetX3DNADirectory", "[", "\"\</home/alberto/12_MOSAICA/x3dna-v2.2\>\"", 
+     "]"}], ";"}], "\[IndentingNewLine]", "RunCurvesAnalysys"}]}]], "Input",
+ CellChangeTimes->{{3.64715005108786*^9, 3.647150113126946*^9}, 
+   3.647150161328794*^9, {3.647150284994149*^9, 3.64715028534411*^9}, {
+   3.64715036292264*^9, 3.647150366057694*^9}, 3.647150514789873*^9, {
+   3.647150604719326*^9, 3.647150629872086*^9}, 3.647150999877*^9}],
+
+Cell[BoxData["\<\"/home/alberto/12_MOSAICA\"\>"], "Output",
+ CellChangeTimes->{
+  3.647150166105989*^9, 3.64715029140733*^9, {3.647150344800252*^9, 
+   3.647150369214117*^9}, 3.6471504580428953`*^9, 3.647150518335664*^9, 
+   3.6471505879956427`*^9, 3.64715063079567*^9, 3.64715087394731*^9, 
+   3.647151004937386*^9, 3.64715118195684*^9}],
+
+Cell[BoxData["\<\"/home/alberto/12_MOSAICA/REDEVELOPMENT\"\>"], "Output",
+ CellChangeTimes->{
+  3.647150166105989*^9, 3.64715029140733*^9, {3.647150344800252*^9, 
+   3.647150369214117*^9}, 3.6471504580428953`*^9, 3.647150518335664*^9, 
+   3.6471505879956427`*^9, 3.64715063079567*^9, 3.64715087394731*^9, 
+   3.647151004937386*^9, 3.647151181959159*^9}]
+}, Open  ]]
+},
+WindowSize->{1057, 613},
+WindowMargins->{{52, Automatic}, {-42, Automatic}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (June 27, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2821, 55, 275, "Input"],
+Cell[3404, 79, 717, 13, 32, "Output"],
+Cell[4124, 94, 498, 8, 32, "Output"],
+Cell[4625, 104, 498, 8, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5160, 117, 312, 8, 32, "Input"],
+Cell[5475, 127, 553, 11, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6065, 143, 312, 8, 32, "Input"],
+Cell[6380, 153, 578, 11, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6995, 169, 1754, 44, 385, "Input"],
+Cell[8752, 215, 5251, 94, 463, "Output"]
+}, Open  ]],
+Cell[14018, 312, 1649, 44, 341, "Input"],
+Cell[CellGroupData[{
+Cell[15692, 360, 1591, 40, 297, "Input"],
+Cell[17286, 402, 176, 2, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17499, 409, 1625, 41, 341, "Input"],
+Cell[19127, 452, 125, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19289, 458, 1674, 42, 341, "Input"],
+Cell[20966, 502, 338, 5, 32, "Output"],
+Cell[21307, 509, 353, 5, 89, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

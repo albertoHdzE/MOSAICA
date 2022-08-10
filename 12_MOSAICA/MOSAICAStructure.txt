@@ -1,0 +1,35 @@
+* -> required
+(opt) -> optional
+(r)-> result file after any execution of processes
+=====================================0
+
+--------------------------------------------------------------
+FOLDER OF SIMULATIONS WITH MOSAICS
+After running a simulation, 5 files or results are generated
+These 5 files are needed for more analysis.
+--------------------------------------------------------------
+MOSAICS (folder)
+	- *coordinates of your model (file tarject) [.pdb]
+	- *parameter file that define global refinement parameters [.input]
+	- *MOSAICA.m [.m]
+	- *RUNMOSAICS.sh [.sh]
+	- *clean
+	- (r) [.pos.pdb]
+	- (r) [.pos_out.pdb]
+	- (r) [.tors_pos]
+	- (r) [_energy]
+	- (r) [sim_param.out] 
+
+---------------------------------------------------------------
+MASTER FOLDER
+In MOSAICA context, it is supposed a serie of simulations were
+executed and there exists a master folder that contains a folder
+called MOSAICAFilesTest that contains all simulations to be analyzed. One simulation per subfolder in the MOSAICAFilesTest.
+In the master folder it is needed to create an empty folder called
+REDEVELOPMENT
+---------------------------------------------------------------
+MASTER FOLDER
+	- MOSAICS (folder)
+	- MOSAICA.m [.m]
+	- pymolReordering.py [.py]	
+	- 	-
